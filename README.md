@@ -12,8 +12,30 @@ YouTube-3DSage
 
 ### To compile and run:
 
-1. Create a build directory and run compilation commands as mentioned below:  
+1. As a **vcpkg user**, you can install dependencies using the package manager:
+   - **vcpkg** is a package manager for C++ libraries, and I use it to manage and install dependencies for this project.
+   - To install `vcpkg`, follow the instructions on the official [vcpkg GitHub page](https://github.com/microsoft/vcpkg).
+   - Once installed, you can use `vcpkg` to install dependencies, for example:
+     ```bash
+     ./vcpkg install <package_name>
+     ```
+
+2. Create a build directory:  
    ```bash
    mkdir build_dir
+   ```
+
+3. Change to the build directory:  
+   ```bash
    cd build_dir
-   cmake .. && make
+   ```
+
+4. Run CMake to configure the project:  
+   ```bash
+   cmake ..
+   ```
+
+5. Build the project using Make:  
+   ```bash
+   make
+   ```
